@@ -1,0 +1,55 @@
+/* Navbar */
+.navbar {
+  background: transparent !important;
+  padding: 0.1rem 1rem;
+}
+
+.navbar-nav {
+  align-items: flex-start;   /* push links to top */
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 20PX;
+   padding-top: 0;           /* remove extra vertical padding */
+  padding-bottom: 0;
+}
+
+.nav-link:hover{
+  color: #FFA600 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('images/tXcDQ2.jpg') no-repeat center center/cover;
+  height: 700PX;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5); /* overlay */
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;  /* full screen height */
+  background: linear-gradient(to bottom, black, #444); 
+
+}
+
+
