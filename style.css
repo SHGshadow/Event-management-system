@@ -1,7 +1,7 @@
 /* Navbar */
 .navbar {
   background: transparent !important;
-  padding: 0.1rem 1rem;
+  padding: 0.4rem 1rem;
 }
 
 .navbar-nav {
@@ -53,3 +53,54 @@ body {
 }
 
 
+
+
+/* Upcoming Events Section */
+.upcoming-events {
+  background: #000; /* black background */
+}
+
+.section-title {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.event-card {
+  background: #111; /* dark card background */
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px); /* hover effect */
+}
+
+.event-card img {
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.event-card h5 {
+  font-size: 20px;
+}
+
+.event-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.event-card .btn {
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+
+.btn:hover{
+  background-color: rgb(87, 255, 87);
+}
