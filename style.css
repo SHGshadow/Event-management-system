@@ -108,6 +108,25 @@ body {
   padding: 8px 20px;
 }
 
+.hero-btn {
+  background-color: #FFA600; /* Your brand gold */
+  color: #000;               /* Black text as per design */
+  font-weight: bold;
+  padding: 12px 30px;        /* Makes it a bit wider */
+  border-radius: 12px;       /* Match the rounded-corner look in the image */
+  border: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  width: auto !important;    /* Overrides your global .btn 100% width */
+  display: inline-block;
+}
+
+.hero-btn:hover {
+  background-color: #ffb933; /* Slightly lighter on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+  color: #000;
+}
+
 .btn:hover{
   background-color: rgb(87, 255, 87);
 }
@@ -172,7 +191,7 @@ body {
   flex: 2;
   min-width: 300px;
   background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
+  padding: 25px;
   border: 1px solid #FFA600;
   border-radius: 8px;
   text-align: left;
@@ -330,4 +349,125 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+/* ================= EVENT PAGE ================= */
+
+.event-page {
+  color: white;
+  padding: 60px 20px;
+}
+
+.event-heading {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+/* Image */
+.event-img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;   /* keeps image nice */
+  border-radius: 10px;
+
+}
+
+/* Grid for right side */
+.event-details-grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+/* Labels (gold color) */
+.label {
+  color: #FFA600;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Values */
+.value {
+  color: #ddd;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Button position */
+.buy-btn {
+  width: auto !important;   /* override global */
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  float: right;
+}
+
+/* ===== Registration Page ===== */
+
+.reg-section {
+  min-height: 100vh;
+  background: url('images/nadagama.jpg') no-repeat center center/cover;
+  padding-top: 120px;
+  position: relative;
+}
+
+/* Dark overlay */
+.reg-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.reg-section .container {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+/* Title */
+.reg-title {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+/* Form layout */
+.reg-form {
+  max-width: 1000px;
+}
+
+/* Each row */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* Label (left side) */
+.form-row label {
+  width: 200px;
+  font-size: 20px;
+}
+
+/* Inputs (long bars like image) */
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background: #d9d9d9;
+}
+
+/* Checkbox */
+.terms {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  gap: 10px;
+  margin-left: 350px;
 }
