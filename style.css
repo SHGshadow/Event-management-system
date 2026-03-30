@@ -471,3 +471,176 @@ footer a:hover {
   gap: 10px;
   margin-left: 350px;
 }
+
+/* ================= SIGNUP PAGE ================= */
+
+.signup-page {
+  min-height: 100vh;
+  background: url('images/22908ecd273b763a4f41aceb34a6dfd4.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 80px 60px;
+}
+
+.signup-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.signup-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  color: white;
+}
+
+.signup-title {
+  text-align: center;
+  color: #FFA600;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.signup-form {
+  width: 100%;
+}
+
+.signup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 140px;
+  row-gap: 15px;
+}
+
+.signup-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-group label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.signup-group input {
+  width: 100%;
+  height: 18px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background: #f1f1f1;
+  font-size: 16px;
+  outline: none;
+}
+
+.signup-group input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 166, 0, 0.4);
+}
+
+/* Register button center */
+.signup-btn-wrap {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.register-btn {
+  width: 260px !important;
+  background-color: #FFA600;
+  color: black;
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 12px 20px;
+}
+
+
+/* Help text */
+.signup-help {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.signup-help span {
+  color: #ddd;
+}
+
+/* Back button right */
+.signup-back-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.signup-back-btn {
+  width: 180px !important;
+  background-color: #FFA600;
+  color: black;
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 12px 20px;
+}
+
+/* Footer for signup page */
+.signup-footer {
+  text-align: center;
+  padding: 20px 15px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  font-size: 14px;
+}
+
+.signup-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.signup-footer a:hover {
+  color: #FFA600;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .signup-title {
+    font-size: 45px;
+  }
+
+  .signup-grid {
+    column-gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-page {
+    padding: 100px 30px 40px;
+  }
+
+  .signup-grid {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    column-gap: 0;
+  }
+
+  .signup-title {
+    font-size: 38px;
+    margin-bottom: 35px;
+  }
+
+  .signup-back-wrap {
+    justify-content: center;
+  }
+
+  .register-btn,
+  .signup-back-btn {
+    width: 100% !important;
+    max-width: 280px;
+  }
+}
